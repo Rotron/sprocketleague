@@ -46,6 +46,8 @@ class Car extends PhysicalObject {
         let chassisBody = this.physicsObj = new this.CANNON.Body({ mass: MASS });
         chassisBody.addShape(chassisShape);
         chassisBody.position.set(0, 0, 0);
+
+        chassisBody.quaternion.setFromEuler(-1,0,0,"XYZ");
         // chassisBody.angularVelocity.set(0, 0, 0.5);
         // demo.addVisual(chassisBody);
 
@@ -120,7 +122,7 @@ class Car extends PhysicalObject {
     }
 
     destroy() {
-        // this.gameEngine.physicsEngine.removeObject(this.vehicle);
+         // this.gameEngine.physicsEngine.removeObject(this.vehicle);
     }
 
 }
