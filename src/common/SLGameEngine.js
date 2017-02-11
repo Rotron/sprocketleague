@@ -6,7 +6,7 @@ const Car = require('./Car');
 const Arena = require('./Arena');
 
 const maxSteerVal = 0.5;
-const maxForce = 100;
+const maxForce = 1000;
 const brakeForce = 1000000;
 
 // todo check if this should be global
